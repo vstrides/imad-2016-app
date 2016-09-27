@@ -7,11 +7,11 @@ button.onclick = function() {
 var request = new XMLHttpRequest();
 
 request.onreadystatechange = function() {
-    if(request.readyState === XMLHttpReaquest.DONE)
+    if (request.readyState === XMLHttpReaquest.DONE)
     {
-        if(request.status === 200)
+        if (request.status === 200)
         {
-            counter = request.responseText;
+            var counter = request.responseText;
             var span = document.getElementById('count');  
             span.innerHTML = counter.toString();
         }
