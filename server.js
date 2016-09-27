@@ -108,6 +108,7 @@ function createTemplate(data) {
 }
 
 app.get('/', function (req, res) {
+	console.log("here");
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
@@ -132,7 +133,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
+var port = 8088; // Use 8080 for local development because you might already have apache running on 80
+app.listen(8088, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
